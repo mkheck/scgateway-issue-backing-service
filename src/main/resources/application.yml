@@ -7,3 +7,6 @@ management:
     web:
       exposure:
         include: "*"
+spring:
+  application:
+    name: backing-service
