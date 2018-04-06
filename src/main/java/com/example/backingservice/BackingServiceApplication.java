@@ -63,6 +63,16 @@ public class BackingServiceApplication {
 }
 
 @RestController
+class HomeController {
+
+    @GetMapping("/")
+    public String home() {
+        return "Home";
+    }
+
+}
+
+@RestController
 @RequestMapping("/quotes")
 class QuoteController {
     private final QuoteRepository repo;
