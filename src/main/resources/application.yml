@@ -1,0 +1,9 @@
+server:
+  port: ${PORT:8088}
+  context-path: /
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
